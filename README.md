@@ -4,6 +4,7 @@ I do not suggest using FBoot for any serious production projects, this is primar
 
 ## Usage
 
+- Building on a UNIX-like operating system like Linux is strongly recommended
 - Ensure you have [Git](https://git-scm.com/downloads), [GNU Make](https://www.gnu.org/software/make/#download), and [Nasm](https://www.nasm.us/pub/nasm/releasebuilds/) installed on your system.
 - Clone the repository: `git clone https://github.com/FeltMacaroon389/FBoot.git`
 - Move into the cloned directory: `cd FBoot`
