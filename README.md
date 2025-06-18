@@ -1,5 +1,7 @@
 # FBoot
-Extraordinarily simple real mode bootloader written in NASM for x86 BIOS. Loads specified sector amount and jumps to raw loaded segment.
+Extraordinarily simple real mode bootloader written in NASM for x86 BIOS. 
+
+FBoot sets up a basic and safe environment, loads the specified sector amount, and jumps to the raw loaded segment.
 
 I do not suggest using FBoot for any serious production projects, this is primarily educational.
 
