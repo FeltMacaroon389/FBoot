@@ -19,7 +19,7 @@ I do not suggest using FBoot for any serious production projects, this is primar
 
 ## Supported languages
 Currently, only binaries assembled directly from assembly language is supported.
-However, higher-level languages like C *may* work, provided it's compiled to a raw binary and that there are no additional files or headers included.
+However, higher-level languages like C *may* work, provided it's compiled to a raw binary and that there are no additional files or headers included above the entrypoint.
 
 ## License
 FBoot is licensed under the **GNU GPLv3** license.
