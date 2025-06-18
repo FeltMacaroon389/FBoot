@@ -13,6 +13,7 @@ I do not suggest using FBoot for any serious production projects, this is primar
     - `nasm -f bin -o kernel.bin kernel.asm`
     - `cat fboot.bin kernel.bin > boot.img`
 - This will produce a bootable image at `boot.img`
+- If you wish for your kernel to return, it's important to use the `retf` instruction instead of normal `ret`
 
 ## Supported languages
 Currently, only binaries assembled directly from assembly language is supported.
