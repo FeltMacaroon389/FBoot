@@ -163,6 +163,7 @@ disk_error_message db NEWLINE, "FBoot: Fatal Error: Error Loading From Disk", NE
 ; Function to print a string from SI using BIOS
 print_string:
 	push ax
+	push si
 	
 	; BIOS function: write character from AL
 	mov ah, 0x0E
@@ -182,6 +183,7 @@ print_string:
 	jmp .print_loop
 
 .done:
+	pop si
 	pop ax
 
 	ret
