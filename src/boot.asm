@@ -63,6 +63,11 @@ _start:
 
 ; When the kernel returns
 .kernel_return:
+	; Ensure VGA text mode is set
+	xor ah, ah
+	mov al, 0x03
+	int 0x10
+
 	; Print return message
 	mov si, return_message
 	call print_string
