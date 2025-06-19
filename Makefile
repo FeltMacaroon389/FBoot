@@ -12,11 +12,22 @@ BIN_DIR = bin
 OUT_BIN = $(BIN_DIR)/fboot.bin
 
 # Phony targets
-.PHONY: all clean
+.PHONY: all help clean
 
 
 # By default, build the output binary
 all: $(OUT_BIN)
+
+# Display help menu about this Makefile
+help:
+	@echo "Usage: make <target>"
+	@echo " "
+	@echo "Targets:"
+	@echo "    <NO OPTIONS> - same as $(OUT_BIN)"
+	@echo "    help		- Display this help menu"
+	@echo "    $(OUT_BIN)	- Build the output binary"
+	@echo "    clean	- Delete build files"
+	@echo " "
 
 # Build the output binary
 $(OUT_BIN):
